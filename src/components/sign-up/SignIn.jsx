@@ -2,15 +2,15 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
-import { BsMeta ,BsLinkedin} from "react-icons/bs";
+import { BsMeta, BsLinkedin } from "react-icons/bs";
 
 const SignIn = () => {
   return (
     <>
-      <div className="bg-[#7367F0] h-screen flex justify-center items-center">
-        <div className="flex justify-center gap-10">
-          <div className="flex flex-col justify-start items-start bg-white p-7 w-full gap-10 rounded-lg">
-            <div className="flex flex-col  w-full gap-4">
+      <div className="bg-[#7367F0] flex justify-center h-screen p-7">
+        <div className="flex justify-center  items-center  gap-4 w-auto">
+          <div className="flex flex-col justify-start items-start bg-white p-4   gap-10 rounded-lg ">
+            <div className="flex flex-col gap-4">
               <h1 className="text-3xl">Sign In</h1>
               <span className="text-lg">
                 New user?
@@ -80,27 +80,37 @@ const SignIn = () => {
                 <div className="flex-grow border-t border-gray-200"></div>
               </div>
             </div>
-            <div className="flex justify-between w-full py-1 px-2">
-              <button className="flex justify-center items-center gap-2 w-40 h-12">
+            <div className="flex  lg:flex-wrap  justify-center gap-4 ">
+              <button className="flex justify-center items-center gap-2 w-36 h-12 border-2">
                 <FcGoogle />
                 Google
               </button>
-              <button>meta</button>
-              <button>Linkedin</button>
-              <button>microsoft</button>
+              <button className="flex justify-center items-center gap-2 w-36 h-12 border-2">
+                <BsMeta />
+                BsMeta
+              </button>
+
+              <button className="flex justify-center items-center gap-2 w-36 h-12 border-2">
+                <BsLinkedin />
+                Linkedin
+              </button>
+              <button className="flex justify-center items-center gap-2 w-36 h-12 border-2">
+                <BsLinkedin />
+                microsoft
+              </button>
             </div>
-            <span>
+            <span className="text-ellipsis">
               Protected by reCAPTCHA and subject to the ePosting Privacy Policy
               and Terms of Service.
             </span>
           </div>
-          <div className="flex justify-center items-center w-full">
+          <div className="">
             <Image
               src="/signin.png"
               alt="signIn"
               width={700}
               height={700}
-            ></Image>
+            />
           </div>
         </div>
       </div>
