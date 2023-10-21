@@ -7,9 +7,9 @@ import { BsMeta, BsLinkedin } from "react-icons/bs";
 const SignIn = () => {
   return (
     <>
-      <div className="bg-[#7367F0] flex justify-center h-screen p-7">
+      <div className="bg-[#7367F0] flex justify-center h-screen">
         <div className="flex justify-center  items-center  gap-4 w-auto">
-          <div className="flex flex-col justify-start items-start bg-white p-4   gap-10 rounded-lg ">
+          <div className="flex flex-col justify-start items-start bg-white p-7   gap-5 rounded-lg ">
             <div className="flex flex-col gap-4">
               <h1 className="text-3xl">Sign In</h1>
               <span className="text-lg">
@@ -99,19 +99,19 @@ const SignIn = () => {
                 microsoft
               </button>
             </div>
-            <span className="text-ellipsis">
+            <span>
               Protected by reCAPTCHA and subject to the ePosting Privacy Policy
               and Terms of Service.
             </span>
           </div>
-          <div className="">
+         
             <Image
               src="/signin.png"
               alt="signIn"
-              width={700}
-              height={700}
+              width={550}
+              height={550}
             />
-          </div>
+          
         </div>
       </div>
     </>
