@@ -96,7 +96,7 @@ const SignIn = () => {
               </button>
               <button className="flex justify-center items-center gap-2 w-36 h-12 border-2">
                 <BsLinkedin />
-                microsoft
+                Microsoft
               </button>
             </div>
             <span>
